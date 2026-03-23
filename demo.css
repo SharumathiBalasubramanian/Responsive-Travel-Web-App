@@ -1,0 +1,115 @@
+/* ================= GLOBAL ================= */
+body {
+  overflow-x: hidden;
+}
+
+/* Service & Destination cards */
+.service-card,
+.destination-card {
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.service-card:hover,
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Step section */
+.step-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* ================= MOBILE (320px - 767px) ================= */
+@media (max-width: 767px) {
+
+  /* Navbar */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  /* Hero */
+  h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  /* Hero image */
+  .hero img,
+  img.img-fluid {
+    width: 100%;
+  }
+
+  /* Services */
+  .service-card {
+    margin-bottom: 20px;
+  }
+
+  /* Destination */
+  .destination-card img {
+    width: 100%;
+  }
+
+  /* Steps */
+  .step-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Testimonial */
+  .card {
+    text-align: center;
+  }
+
+  /* Footer */
+  footer .row > div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
+/* ================= TABLET (768px - 1024px) ================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Hero */
+  h1 {
+    font-size: 36px;
+  }
+
+  /* Services */
+  .service-card {
+    margin-bottom: 20px;
+  }
+
+  /* Destination */
+  .destination-card img {
+    width: 100%;
+  }
+
+  /* Steps */
+  .step-box {
+    align-items: flex-start;
+  }
+
+  /* Footer */
+  footer .row > div {
+    margin-bottom: 20px;
+  }
+
+}
+
+/* ================= DESKTOP (>1024px+) ================= */
+@media (min-width: 1025px) {
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
